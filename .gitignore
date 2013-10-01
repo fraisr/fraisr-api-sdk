@@ -1,2 +1,3 @@
 # nodejs ignores
+.env
 nodejs/node_modules

@@ -1,7 +1,7 @@
 FraisrAPI = require "../index"
 key = process.env.FRAISR_API_KEY ? null
 secret = process.env.FRAISR_API_SECRET ? null
-mode = process.env.FRAISR_API_MODE ? "sandbox"
+mode = "sandbox"
 url = process.env.FRAISR_API_URL ? null
 version = 1
 

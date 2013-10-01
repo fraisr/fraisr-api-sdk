@@ -1,0 +1,6 @@
+--reporter spec
+--compilers coffee:coffee-script
+--recursive
+--require should
+--ignore-leaks
+-t 10000

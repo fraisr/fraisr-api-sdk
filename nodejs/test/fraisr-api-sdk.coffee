@@ -1,8 +1,8 @@
 FraisrAPI = require "../index"
-key = "ca7c88788faae4f347ca60a3ffa1055e6fcdffbe2ceda565d75956502bd3dbea"
-secret = "826d58c2627e90033cdaeeea61010af2537f520780df07f7c9cd94a027acb60ddbdc1edf1b5bcae0cb48f8c1666a8ac0ac09250e8da3360befc0071aab6b0c70"
-mode = "sandbox"
-url = "http://fraisr.dev:3000"
+key = process.env.FRAISR_API_KEY ? null
+secret = process.env.FRAISR_API_SECRET ? null
+mode = process.env.FRAISR_API_MODE ? "sandbox"
+url = process.env.FRAISR_API_URL ? null
 version = 1
 
 describe "FraisrAPI", ->

@@ -1,6 +1,6 @@
 {
   "name": "fraisr-api-sdk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NodeJS SDK for the fraisr API.",
   "main": "index.coffee",
   "scripts": {

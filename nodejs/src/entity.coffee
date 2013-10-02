@@ -17,6 +17,18 @@ module.exports = class Entity
     constructor: (@_data)->
 
     ###*
+     * Returns an object for json serialization
+     * @return {Object}
+    ###
+    toJSON: ->
+        json = {}
+
+        Object.keys(@_data).forEach (key)=>
+            json[key] = @[key]
+
+        json
+
+    ###*
      * @private
      * @param  {Object}   options
      * @param  {Function} callback

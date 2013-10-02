@@ -30,6 +30,22 @@ module.exports = Entity = (function() {
   }
 
   /**
+   * Returns an object for json serialization
+   * @return {Object}
+  */
+
+
+  Entity.prototype.toJSON = function() {
+    var json,
+      _this = this;
+    json = {};
+    Object.keys(this._data).forEach(function(key) {
+      return json[key] = _this[key];
+    });
+    return json;
+  };
+
+  /**
    * @private
    * @param  {Object}   options
    * @param  {Function} callback
